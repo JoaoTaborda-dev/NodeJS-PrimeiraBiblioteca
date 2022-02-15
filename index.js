@@ -11,6 +11,9 @@ function pegaArquivo(caminhoDoArquivo) {
     .readFile(caminhoDoArquivo, encoding)
     .then(texto => console.log(chalk.green(texto)))
     .catch(erro => trataErro(erro))
+    .finally(() =>
+      console.log(chalk.blue('A Leitura do arquivo foi finalizada'))
+    )
 }
 
 // function pegaArquivo(caminhoDoArquivo) {
