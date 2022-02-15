@@ -5,6 +5,9 @@ function trataErro(erro) {
   throw new Error(chalk.red(erro.code, 'Não há arquivo no caminho'))
 }
 
+//Funções assincronas
+//Usando promisses com Async e Await
+
 async function pegaArquivo(caminhoDoArquivo) {
   const encoding = 'utf-8'
   try {
@@ -15,6 +18,7 @@ async function pegaArquivo(caminhoDoArquivo) {
   }
 }
 
+//Usando promisses com o .Then
 // function pegaArquivo(caminhoDoArquivo) {
 //   const encoding = 'utf-8'
 //   fs.promises
@@ -26,6 +30,7 @@ async function pegaArquivo(caminhoDoArquivo) {
 //     )
 // }
 
+//Função sincrona
 // function pegaArquivo(caminhoDoArquivo) {
 //   const encoding = 'utf-8'
 //   fs.readFile(caminhoDoArquivo, encoding, (error, texto) => {
