@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "cli": "node cli.js ./arquivos/texto1.md validar"
   },
   "keywords": [],
@@ -14,5 +14,8 @@
     "axios": "^0.26.0",
     "chalk": "^4.1.2",
     "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
   }
 }
